@@ -65,7 +65,11 @@ pb.addEventListener('click' , ()=>{
         userpoints[0] += 10
     }else if(userpoints[0]=90){
         userpoints[0] +=10
-        pb.style.backgroundColor = 'orange'
+        pb.style.backgroundColor = 'rgb(194, 126, 0)'
+        pb.style.boxShadow = 'none'
+        pb.style.translate = 'none'
+         
+        
         
     }
 
@@ -78,7 +82,10 @@ sb.addEventListener('click' , ()=>{
         userpoints[1] += 10
     }else if(userpoints[1]=90){
         userpoints[1] += 10
-        sb.style.backgroundColor = 'orange'
+        sb.style.backgroundColor = 'rgb(194, 126, 0)'
+        sb.style.boxShadow = 'none'
+        sb.style.translate = 'none'
+        
     }
     mystatus.update()
     console.log('phys',userpoints[0])
@@ -88,7 +95,11 @@ db.addEventListener('click' , ()=>{
     userpoints[2] += 10
     }else if(userpoints[2]=90){
         userpoints[2] +=10
-        db.style.backgroundColor = 'orange'
+        db.style.backgroundColor = 'rgb(194, 126, 0)'
+        db.style.boxShadow = 'none'
+        db.style.translate = 'none'
+         
+        
     }
     mystatus.update()
     console.log('phys',userpoints[0])
@@ -98,7 +109,11 @@ mb.addEventListener('click' , ()=>{
     userpoints[3] += 10
     }else if(userpoints[3]=90){
         userpoints[3] +=10
-        mb.style.backgroundColor = 'orange'
+        mb.style.backgroundColor = 'rgb(194, 126, 0)'
+        mb.style.boxShadow = 'none'
+        mb.style.translate = 'none'
+         
+        
     }
     mystatus.update()
     console.log('phys',userpoints[0])
@@ -108,7 +123,11 @@ ib.addEventListener('click' , ()=>{
     userpoints[4] += 10
     }else if(userpoints[4]=90){
         userpoints[4] +=10
-        ib.style.backgroundColor = 'orange'
+        ib.style.backgroundColor = 'rgb(194, 126, 0)'
+        ib.style.boxShadow = 'none'
+        ib.style.translate = 'none'
+         
+        
     }
     mystatus.update()
     console.log('phys',userpoints[0])
@@ -118,7 +137,11 @@ ab.addEventListener('click' , ()=>{
     userpoints[5] += 10
     }else if(userpoints[5]=90){
         userpoints[5] +=10
-        ab.style.backgroundColor = 'orange'
+        ab.style.backgroundColor = 'rgb(194, 126, 0)'
+        ab.style.boxShadow = 'none'
+        ab.style.translate = 'none'
+         
+        
     }
     mystatus.update()
     console.log('phys',userpoints[0])
