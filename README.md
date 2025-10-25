@@ -1,0 +1,1 @@
+In this project we will create a skill tracking app which will have a record of your basic status of like which nobody notice much ,With this app you can complete goals and get some points as reward which will upgrade your skills, im building this app from scrach so stay tuned for all the updates!! 
