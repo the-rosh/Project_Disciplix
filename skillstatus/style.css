@@ -3,46 +3,58 @@
     margin: 0;
 }
 html{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 
 }
 .toptitle{
-    position: relative;
-    top: 10px;
-    left: 10px;
+
+    margin: 30px 35px;
     font-size: 25px;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    letter-spacing: 0.1em;
+    color: white;
     
 
 
 }
 #myChart{
-    background-color: white;
-    margin: auto;
-    width: 85%;
-    aspect-ratio: 1/1;
+    background-color: rgb(0, 0, 0);
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 20px;
+
 }
 .changeval {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
     display: flex;
     flex-direction: row;
     align-content: space-between;
     flex-wrap: wrap;
     flex-basis: auto;
     width: 80%;
-    margin: auto;
     align-items: center;
     justify-content: center;
 }
 
 .changeval div{
     background-color: rgb(136, 255, 89);
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
-    margin: 5px;
+    margin: 10px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: x-large;
+    box-shadow: 2px 2px white;
 }
 .changeval div:active {
     transition: all 1ms;
     background-color: rgb(118, 221, 77);
+    box-shadow: 0 0 0;
+    translate: 2px 2px;
 }

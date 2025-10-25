@@ -24,16 +24,34 @@ const mystatus = new Chart(ctx, {
                 }]
         },
         options: {
+              maintainAspectRatio: false,
+            responsive: true,
+            layout:{
+                padding: 10
+            },
             plugins:{
                 legend: false
             },
                 scales: {
                 r: {
+                    grid:{
+                        color: 'grey'
+                    },
+                    ticks:{
+                        display:false,
+                        count: 5,
+                    },
                     angleLines: {
                     display: false
                                 },
                     suggestedMin: 0,
                     suggestedMax: 100,
+                    pointLabels: {
+                        font: {
+                            size: 16,
+                            weight : 'bold'
+                        }
+                    }
                     }
 
                 },
@@ -43,9 +61,10 @@ const mystatus = new Chart(ctx, {
 
 pb.addEventListener('click' , ()=>{
 
-    if(userpoints[0]<100){
+    if(userpoints[0]<90){
         userpoints[0] += 10
-    }else{
+    }else if(userpoints[0]=90){
+        userpoints[0] +=10
         pb.style.backgroundColor = 'orange'
         
     }
@@ -55,45 +74,50 @@ pb.addEventListener('click' , ()=>{
     console.log('phys',userpoints[0])
 })
 sb.addEventListener('click' , ()=>{
-    if(userpoints[1]<100){
-    userpoints[1] += 10
-    }else{
+    if(userpoints[1]<90){
+        userpoints[1] += 10
+    }else if(userpoints[1]=90){
+        userpoints[1] += 10
         sb.style.backgroundColor = 'orange'
     }
     mystatus.update()
     console.log('phys',userpoints[0])
 })
 db.addEventListener('click' , ()=>{
-    if(userpoints[2]<100){
+    if(userpoints[2]<90){
     userpoints[2] += 10
-    }else{
+    }else if(userpoints[2]=90){
+        userpoints[2] +=10
         db.style.backgroundColor = 'orange'
     }
     mystatus.update()
     console.log('phys',userpoints[0])
 })
 mb.addEventListener('click' , ()=>{
-    if(userpoints[3]<100){
+    if(userpoints[3]<90){
     userpoints[3] += 10
-    }else{
+    }else if(userpoints[3]=90){
+        userpoints[3] +=10
         mb.style.backgroundColor = 'orange'
     }
     mystatus.update()
     console.log('phys',userpoints[0])
 })
 ib.addEventListener('click' , ()=>{
-    if(userpoints[4]<100){
+    if(userpoints[4]<90){
     userpoints[4] += 10
-    }else{
+    }else if(userpoints[4]=90){
+        userpoints[4] +=10
         ib.style.backgroundColor = 'orange'
     }
     mystatus.update()
     console.log('phys',userpoints[0])
 })
 ab.addEventListener('click' , ()=>{
-    if(userpoints[5]<100){
+    if(userpoints[5]<90){
     userpoints[5] += 10
-    }else{
+    }else if(userpoints[5]=90){
+        userpoints[5] +=10
         ab.style.backgroundColor = 'orange'
     }
     mystatus.update()
